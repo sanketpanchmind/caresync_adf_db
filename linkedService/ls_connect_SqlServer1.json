@@ -1,0 +1,27 @@
+{
+	"name": "ls_connect_SqlServer1",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "LAPTOP-V00QSOUA\\SQLEXPRESS",
+			"database": "caresyncdb",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "dataengineer",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_sqlserver_AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqlserverpassword"
+			}
+		},
+		"connectVia": {
+			"referenceName": "integrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
