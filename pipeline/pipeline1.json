@@ -17,7 +17,7 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderQuery": "select * dbo.hospitals",
+						"sqlReaderQuery": "select * from hospitals",
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
