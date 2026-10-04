@@ -1,0 +1,23 @@
+{
+	"name": "ls_connect_AzureSqlDatabase1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "demoserversp1.database.windows.net",
+			"database": "freesqldb1",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "sanket",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "ls_sqlserver_AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "metadata-password1"
+			}
+		}
+	}
+}
