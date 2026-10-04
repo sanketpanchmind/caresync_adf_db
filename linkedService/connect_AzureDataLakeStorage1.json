@@ -1,0 +1,10 @@
+{
+	"name": "connect_AzureDataLakeStorage1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://staccntcaresyncproject.dfs.core.windows.net/"
+		}
+	}
+}
